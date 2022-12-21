@@ -13,12 +13,15 @@ const counterSlice = createSlice({
         increase(state, action) {
             state.days[action.payload] = state.days[action.payload] + 1; //increase the saved time by 5 minutes 
         },
+        changeOn(state,action){
+            state.isOn = action.payload;
+        },
         turnOff(state) {
             state.isOn = false;
         },
         trunOn(state) {
             state.isOn = true;
-        }
+        },
     }
 });
 
