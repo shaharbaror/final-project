@@ -1,0 +1,8 @@
+.table {
+    display: flex;
+    margin:20vh 25%;
+    height: 700;
+    background-color: lightgray;
+    border-radius: 90px;
+    width:50%;
+}

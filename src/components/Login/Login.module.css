@@ -1,0 +1,55 @@
+.card {
+    width:500px;
+    height: 50vh;
+    margin:220px auto;
+    background-color: white;
+    border-radius: 90px;
+    box-shadow: 4px 8px black;
+    border: 2px solid rgb(0,0,0);
+}
+
+.email-div {
+    display: flex;
+    text-align: center;
+    margin-top:150px;
+    margin-left: 50px ;
+    margin-bottom: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.email {
+    border:none;
+    border-bottom: 1px solid rgb(0,0,0);
+}
+
+.submit-btn {
+    height:50px;
+    width:150px;
+    border-radius: 45px;
+    margin-left: 150px ;
+}
+
+.submit-btn:hover {
+    height:55px;
+    width: 155px;
+    margin-left: 147.5px;
+    margin-top: -2.5px;
+}
+
+.code-input {
+    margin: auto 5px;
+    width: 75px;
+    height:75px;
+    border-radius: 25px;
+    border:2px solid rgb(0,0,0);
+    font-size: 50px;
+    text-align: center;
+}
+
+.code-div {
+    margin-left: 50px;
+    margin-top: 180px;
+}
