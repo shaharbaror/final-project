@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <React.Fragment>
             <Header>
-                <ShowUser/>
+                <ShowUser className={styles['user-part']}/>
                 <ShowLogo/>
                 <Button> Log Out </Button>
             </Header>
