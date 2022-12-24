@@ -16,11 +16,14 @@ const Home = () => {
         <React.Fragment>
             <Header>
                 <ShowUser className={styles['user-part']}/>
-                <ShowLogo/>
-                <Button> Log Out </Button>
+                <ShowLogo className={styles['logo-part']} />
+                <div className={styles['btn-part-div']}>
+                    <Button > Log Out </Button>
+                </div>
             </Header>
             <Clock/>
             <WeekChart/>
+<image src={"https://e7.pngegg.com/pngimages/287/216/png-clipart-white-box-illustration-vertical-text-bubble-miscellaneous-conversations.png"} />
         </React.Fragment>
     );
 };
