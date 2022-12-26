@@ -2,7 +2,7 @@ import styles from './DayChart.module.css'
 import { useSelector } from 'react-redux';
 
 const DayChart = (props) => {
-    const counters = useSelector((state) => state.days[props.day]);
+    const counters = useSelector((state) => state.counter.days[props.day]);
     const highestNum = 43200;
     const present = (counters/highestNum)*100;
     

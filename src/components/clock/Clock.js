@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 import styles from "./Clock.module.css";
 import Counter from "./Counter";
-import { useDispatch } from "react-redux";
-import { counterActions } from "../../store";
+import { useDispatch, useSelector } from "react-redux";
+import { userActions} from "../../store";
 
 export default function Clock() {
+  const isOn = useSelector(state => state.user.isOn);
   const dispatch = useDispatch();
   const date = new Date();
   const day = date.getDay();
-  const [isOn, setIsOn] = useState(false);
 
   const ToggleCounting = () => {
-    dispatch(counterActions.changeOn(!isOn));
-    setIsOn((lastState) => {
-      return !lastState;
-    });
+    dispatch(userActions.changeOn(!isOn));
 
   };
 
